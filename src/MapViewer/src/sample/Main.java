@@ -1,4 +1,4 @@
-package sample;
+package MapViewer.src.sample;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
