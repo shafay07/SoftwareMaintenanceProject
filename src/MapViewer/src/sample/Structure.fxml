@@ -12,18 +12,18 @@
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#exitProgram" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Close" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Zoom">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#zoomInMenu" text="Zoom-in" />
-            <MenuItem mnemonicParsing="false" onMenuValidation="#zoomoutMenu" text="Zoom-out" />
+            <MenuItem mnemonicParsing="false" text="Zoom-in" />
+            <MenuItem mnemonicParsing="false" text="Zoom-out" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#info" text="Instructions" />
+            <MenuItem mnemonicParsing="false" text="Instructions" />
           </items>
         </Menu>
       </menus>
