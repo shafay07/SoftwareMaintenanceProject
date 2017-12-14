@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="600.999977929685" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <children>
     <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <menus>
@@ -28,8 +28,23 @@
         </Menu>
       </menus>
     </MenuBar>
-    <Label layoutX="14.0" layoutY="600.0" prefWidth="77.0" text="Current : (x,y)" />
-    <Label layoutX="273.0" layoutY="600.0" text="Boat : (x,y)" />
-    <Label layoutX="536.0" layoutY="600.0" text="Axe : (x,y)" />
+    <GridPane prefWidth="600.0001220703125" style="-fx-background-color: #ff4161;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Label prefWidth="77.0" text=" Current : (x,y)" textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Axe : (x,y)" textFill="BLACK" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Label text="Boat : (x,y)" textFill="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <Label text="G : Axe, H : Boat" textFill="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
   </children>
 </AnchorPane>
