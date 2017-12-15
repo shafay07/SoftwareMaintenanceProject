@@ -2,6 +2,8 @@ package MapViewer.src.sample;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -31,30 +33,38 @@ public class Controller {
 
     @FXML
     void aboutInfo(ActionEvent event) {
+
     }
 
     @FXML
     void exit(ActionEvent event) {
+        Platform.exit();
     }
 
     @FXML
     void handleKeyAction(KeyEvent event) {
+
     }
 
     @FXML
     void handleSetPosition(KeyEvent event) {
+
     }
 
     @FXML
     void helpInfo(ActionEvent event) {
+
     }
+
 
     @FXML
     void zoomInFromMenu(ActionEvent event) {
+
     }
 
     @FXML
     void zoomOutFromMenu(ActionEvent event) {
+
     }
 
     @FXML

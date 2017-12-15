@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane onKeyPressed="#handleKeyAction" onKeyReleased="#handleSetPosition" prefHeight="700.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.neet.MapViewer.View.MainController">
+<BorderPane onKeyPressed="#handleKeyAction" onKeyReleased="#handleSetPosition" prefHeight="700.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MapViewer.src.sample.Controller">
   <bottom>
     <GridPane style="-fx-background-color: #ff4161;" BorderPane.alignment="CENTER">
       <children>
