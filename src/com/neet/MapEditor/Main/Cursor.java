@@ -24,6 +24,5 @@ public class Cursor {
         imageOption[2] = new Image(Cursor.class.getResourceAsStream("/Sprites/cursor_normal.gif"));
         cursorColumns = 17;
         cursorRows = 17;
-
     }
 }
