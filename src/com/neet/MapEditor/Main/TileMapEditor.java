@@ -163,8 +163,8 @@ public class TileMapEditor implements ObjectPosition {
     public void zoomOutImage(){
         if(magnifyCoefficient > 1){
             magnifyCoefficient /= 2;
-            magnifyCoefficient *= 2;
-            magnifyCoefficient *= 2;
+            currentNumberOfColumns *= 2;
+            currentNumberOfRows *= 2;
             setOffset(magnifyCoefficient);
             validCursor();
             updateCurrentCanvas();

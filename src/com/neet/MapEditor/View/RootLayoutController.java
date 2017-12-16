@@ -38,17 +38,21 @@ public class RootLayoutController {
             Main.tileMapEditor.zoomOutImage();
         } else if(e.getCode() == KeyCode.W){
             // Move cursor up when 'W' key is pressed
+            System.out.println("W key pressed");
             Main.tileMapEditor.cursorUp();
         } else if (e.getCode() == KeyCode.S) {
             // Move cursor down when 'S' key is pressed
+            System.out.println("S key pressed");
             Main.tileMapEditor.cursorDown();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
             // Move cursor to the left when 'A' key is pressed
+            System.out.println("A key pressed");
             Main.tileMapEditor.cursorLeft();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.D) {
             // Move cursor to the right when 'D' key is pressed
+            System.out.println("D key pressed");
             Main.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
