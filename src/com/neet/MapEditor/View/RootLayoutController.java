@@ -36,23 +36,23 @@ public class RootLayoutController {
         } else if(e.getCode() == KeyCode.O){
             // Zoom out when the 'O' key is pressed
             Main.tileMapEditor.zoomOutImage();
-        } else if(e.getCode() == KeyCode.UP || e.getCode() == KeyCode.W){
-            // Move cursor up when 'UP' key is pressed
+        } else if(e.getCode() == KeyCode.W){
+            // Move cursor up when 'W' key is pressed
             Main.tileMapEditor.cursorUp();
-        } else if (e.getCode() == KeyCode.DOWN || e.getCode() == KeyCode.S) {
-            // Move cursor down when 'DOWN' key is pressed
+        } else if (e.getCode() == KeyCode.S) {
+            // Move cursor down when 'S' key is pressed
             Main.tileMapEditor.cursorDown();
             updateCursorPos();
-        } else if (e.getCode() == KeyCode.LEFT || e.getCode() == KeyCode.A) {
-            // Move cursor to the left when 'LEFT' key is pressed
+        } else if (e.getCode() == KeyCode.A) {
+            // Move cursor to the left when 'A' key is pressed
             Main.tileMapEditor.cursorLeft();
             updateCursorPos();
-        } else if (e.getCode() == KeyCode.RIGHT || e.getCode() == KeyCode.D) {
-            // Move cursor to the right when 'RIGHT' key is pressed
+        } else if (e.getCode() == KeyCode.D) {
+            // Move cursor to the right when 'D' key is pressed
             Main.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
-            // Place ace when 'A' key is pressed
+            // Place axe when 'A' key is pressed
             Main.tileMapEditor.turningOnCursorColor();
             info.setText("Placing Axe");
         } else if (e.getCode() == KeyCode.B) {
