@@ -1,13 +1,17 @@
 package com.neet.MapEditor.Main;
 
+import com.neet.DiamondHunter.Main.Game;
+import com.neet.MapEditor.View.RootLayoutController;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class Main extends Application{
@@ -21,7 +25,7 @@ public class Main extends Application{
     public static boolean launch = false;
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) throws Exception{
         Main.primaryStage = primaryStage;
         Main.primaryStage.setTitle("Map Editor");
         Platform.setImplicitExit(false);
@@ -38,6 +42,7 @@ public class Main extends Application{
             layout = loader.load();
 
             Scene scene = new Scene(layout);
+            scene.setOnKeyPressed(layout.getOnKeyPressed());
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);
             primaryStage.show();

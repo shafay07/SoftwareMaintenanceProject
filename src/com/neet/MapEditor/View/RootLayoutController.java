@@ -3,12 +3,14 @@ package com.neet.MapEditor.View;
 import com.neet.DiamondHunter.Main.Game;
 import com.neet.MapEditor.Main.Main;
 import javafx.application.Platform;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
-public class RootLayoutController {
+public class RootLayoutController implements EventHandler<KeyEvent>{
 
     @FXML
     private Label cursorPos;
@@ -22,11 +24,10 @@ public class RootLayoutController {
     @FXML
     private Label boatPos;
 
-
-
     @FXML
-    private void handleKeyPressEvent(KeyEvent e){
-        if(Main.tileMapEditor.cursorColor == false){
+    @Override
+    public void handle(KeyEvent e) {
+        if(!Main.tileMapEditor.cursorColor){
             info.setText("A for Axe, B for Boat");
         }
 
@@ -36,23 +37,19 @@ public class RootLayoutController {
         } else if(e.getCode() == KeyCode.O){
             // Zoom out when the 'O' key is pressed
             Main.tileMapEditor.zoomOutImage();
-        } else if(e.getCode() == KeyCode.W){
+        } else if(e.getCode() == KeyCode.UP){
             // Move cursor up when 'W' key is pressed
-            System.out.println("W key pressed");
             Main.tileMapEditor.cursorUp();
-        } else if (e.getCode() == KeyCode.S) {
+        } else if (e.getCode() == KeyCode.DOWN) {
             // Move cursor down when 'S' key is pressed
-            System.out.println("S key pressed");
             Main.tileMapEditor.cursorDown();
             updateCursorPos();
-        } else if (e.getCode() == KeyCode.A) {
+        } else if (e.getCode() == KeyCode.LEFT) {
             // Move cursor to the left when 'A' key is pressed
-            System.out.println("A key pressed");
             Main.tileMapEditor.cursorLeft();
             updateCursorPos();
-        } else if (e.getCode() == KeyCode.D) {
+        } else if (e.getCode() == KeyCode.RIGHT) {
             // Move cursor to the right when 'D' key is pressed
-            System.out.println("D key pressed");
             Main.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
@@ -132,5 +129,4 @@ public class RootLayoutController {
     private void updateCursorPos(){
         cursorPos.setText("(" + Main.tileMapEditor.cursor.cursorRows + ", " + Main.tileMapEditor.cursor.cursorColumns + ")");
     }
-
 }
