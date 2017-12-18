@@ -242,7 +242,7 @@ public class TileMapEditor implements ObjectPosition {
     }
 
     /**
-     * This method will change cursor color when the user attemots to place and object in order to
+     * This method will change cursor color when the user attempts to place and object in order to
      * indicate the availability of the position.
      */
     private void changeCursorColor(){
@@ -357,7 +357,7 @@ public class TileMapEditor implements ObjectPosition {
     }
 
     /**
-     * This method places the axe and handles necessary cursor functions after the 'A' buttong is pressed.
+     * This method places the axe and handles necessary cursor functions after the 'A' button is pressed.
      *
      * @return handleType Return the type of setting result.
      */
@@ -403,7 +403,7 @@ public class TileMapEditor implements ObjectPosition {
     }
 
     /**
-     * This method places the axe and handles necessary cursor functions after the 'A' buttong is pressed.
+     * This method places the boat and handles necessary cursor functions after the 'A' button is pressed.
      *
      * @return handleType Return the type of setting result.
      */

@@ -38,18 +38,18 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             // Zoom out when the 'O' key is pressed
             Main.tileMapEditor.zoomOutImage();
         } else if(e.getCode() == KeyCode.UP){
-            // Move cursor up when 'W' key is pressed
+            // Move cursor up when 'Up' key is pressed
             Main.tileMapEditor.cursorUp();
         } else if (e.getCode() == KeyCode.DOWN) {
-            // Move cursor down when 'S' key is pressed
+            // Move cursor down when 'Down' key is pressed
             Main.tileMapEditor.cursorDown();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.LEFT) {
-            // Move cursor to the left when 'A' key is pressed
+            // Move cursor to the left when 'Left' key is pressed
             Main.tileMapEditor.cursorLeft();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.RIGHT) {
-            // Move cursor to the right when 'D' key is pressed
+            // Move cursor to the right when 'Right' key is pressed
             Main.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
@@ -119,11 +119,13 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
     @FXML
     private void help(){
         // Display help information dialog
+    	Main.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n To move use the arrow Keys.","Instructions");
     }
 
     @FXML
     private void about(){
         // Display information about the program
+    	Main.about(" The purpose of this program is to allow the User to customise the map\n for more styles of gameplay.","About");
     }
 
     private void updateCursorPos(){

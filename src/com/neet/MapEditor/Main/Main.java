@@ -13,6 +13,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 public class Main extends Application{
 
@@ -72,6 +73,15 @@ public class Main extends Application{
 
         layout.setCenter(tilePane);
     }
+    
+    public static void infoBox(String infoMessage, String titleBar)
+    {
+        JOptionPane.showMessageDialog(null, infoMessage, titleBar, JOptionPane.INFORMATION_MESSAGE);
+    }
 
+    public static void about (String about, String Heading)
+    {
+    	JOptionPane.showMessageDialog(null, about, Heading, JOptionPane.INFORMATION_MESSAGE);
+    }
     public static void main(String[] args){ launch(args); }
 }
