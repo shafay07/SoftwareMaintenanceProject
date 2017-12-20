@@ -26,6 +26,7 @@ public class TileMapEditor implements ObjectPosition {
     @Override
     public int getAxeColumn() { return axeColumn; }
 
+    //assigning integers for reference
     private final int BOAT = 0;
     private final int AXE = 1;
 
@@ -33,12 +34,15 @@ public class TileMapEditor implements ObjectPosition {
     public int numberOfColumns;
     public int numberOfRows;
 
+    //cursor variable
     public Cursor cursor;
     public boolean cursorColor = false;
 
+    //to keep track of current coordiantes
     private int currentNumberOfColumns;
     private int currentNumberOfRows;
 
+    //zoom functionality
     private int magnifyCoefficient = 1;
 
     private int[][] mapMatrix;
@@ -47,7 +51,7 @@ public class TileMapEditor implements ObjectPosition {
     private Image tileset;
     private int numberOfTilesAcross;
 
-    /* Main canvas that updates the entire map. */
+    /* MapMain canvas that updates the entire map. */
     public Canvas canvas;
 
     /* Shows current part of the map with relevant magnify coefficient. */
@@ -56,7 +60,7 @@ public class TileMapEditor implements ObjectPosition {
     /* Stores current image of the entire map including the cursor. */
     private Image mapImage;
 
-    /* This variable will store original image of the entire map. */
+    /* This variable will store original image of the entire map, without the cursor. */
     private Image originalMapImage;
 
     public int offset;
@@ -64,12 +68,13 @@ public class TileMapEditor implements ObjectPosition {
     public int moveSetRows;
 
     public Image objects;
+    //status of objects
     public boolean axePlaced = false;
     public boolean boatPlaced = false;
 
     /**
-     * This method reads the numbers from the map file and places them in the mapMatrix declared above
-     * */
+     This method reads the numbers from the map file and places them in the mapMatrix declared above
+     **/
     public void loadMapFile(String mapFile){
         try{
             InputStream in = getClass().getResourceAsStream(mapFile);
@@ -117,6 +122,7 @@ public class TileMapEditor implements ObjectPosition {
         tileType = new int[numberOfRows][numberOfColumns];
         cursor = new Cursor();
 
+        //draws the map
         for(int row = 0; row < numberOfRows; row++){
             for(int column = 0; column < numberOfColumns; column++){
                 if(mapMatrix[row][column] == 0)
@@ -149,6 +155,7 @@ public class TileMapEditor implements ObjectPosition {
         mapImage = canvas.snapshot(null,null);
     }
 
+    //zoom in method
     public void zoomInImage(){
         if(magnifyCoefficient < 4) {
             magnifyCoefficient *= 2;
@@ -159,7 +166,7 @@ public class TileMapEditor implements ObjectPosition {
             updateCurrentCanvas();
         }
     }
-
+    //zoom out method
     public void zoomOutImage(){
         if(magnifyCoefficient > 1){
             magnifyCoefficient /= 2;

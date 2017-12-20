@@ -33,8 +33,7 @@ public class JukeBox {
 		try {
 			InputStream in = JukeBox.class.getResourceAsStream(s);
 			InputStream bin = new BufferedInputStream(in);
-			AudioInputStream ais =
-				AudioSystem.getAudioInputStream(bin);
+			AudioInputStream ais = AudioSystem.getAudioInputStream(bin);
 			AudioFormat baseFormat = ais.getFormat();
 			AudioFormat decodeFormat = new AudioFormat(
 				AudioFormat.Encoding.PCM_SIGNED,

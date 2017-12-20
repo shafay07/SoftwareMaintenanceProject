@@ -1,6 +1,8 @@
 package com.neet.MapEditor.Main;
 
 public interface ObjectPosition {
-    int getBoatRow(); int getBoatColumn();
-    int getAxeRow(); int getAxeColumn();
+    int getBoatRow();       //boat row coordinates
+    int getBoatColumn();    //boat column coordinates
+    int getAxeRow();        //axe row coordinates
+    int getAxeColumn();     //axe column coordinates
 }
