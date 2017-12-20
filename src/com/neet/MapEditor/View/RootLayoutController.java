@@ -36,24 +36,22 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             // Zoom out when the 'O' key is pressed
             MapMain.tileMapEditor.zoomOutImage();
         } else if(e.getCode() == KeyCode.UP){
-<<<<<<< HEAD
             // Move cursor up when 'Up' key is pressed
-            Main.tileMapEditor.cursorUp();
+            MapMain.tileMapEditor.cursorUp();
         } else if (e.getCode() == KeyCode.DOWN) {
             // Move cursor down when 'Down' key is pressed
-            Main.tileMapEditor.cursorDown();
+            MapMain.tileMapEditor.cursorDown();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.LEFT) {
             // Move cursor to the left when 'Left' key is pressed
-            Main.tileMapEditor.cursorLeft();
+            MapMain.tileMapEditor.cursorLeft();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.RIGHT) {
             // Move cursor to the right when 'Right' key is pressed
-            Main.tileMapEditor.cursorRight();
+            MapMain.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
             // Place axe when 'A' key is pressed
-=======
             // Move cursor up when 'arrow up' key is pressed
             MapMain.tileMapEditor.cursorUp();
             updateCursorPos();
@@ -72,7 +70,6 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
         } else if (e.getCode() == KeyCode.A) {
             // Place axe when 'A' key is pressed
             MapMain.tileMapEditor.turningOnCursorColor();
->>>>>>> map_editor-final
             info.setText("Placing Axe");
             setObjectPosition(e);
         } else if (e.getCode() == KeyCode.B) {
@@ -139,13 +136,13 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
     @FXML
     private void help(){
         // Display help information dialog
-    	Main.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n To move use the arrow Keys.","Instructions");
+        MapMain.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n To move use the arrow Keys.","Instructions");
     }
 
     @FXML
     private void about(){
         // Display information about the program
-    	Main.about(" The purpose of this program is to allow the User to customise the map\n for more styles of gameplay.","About");
+        MapMain.about(" The purpose of this program is to allow the User to customise the map\n for more styles of gameplay.","About");
     }
 
     private void updateCursorPos(){
