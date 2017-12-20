@@ -56,10 +56,12 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             // Place axe when 'A' key is pressed
             MapMain.tileMapEditor.turningOnCursorColor();
             info.setText("Placing Axe");
+            setObjectPosition(e);
         } else if (e.getCode() == KeyCode.B) {
             // Place boat when 'B' key is pressed
             MapMain.tileMapEditor.turningOnCursorColor();
             info.setText("Placing Boat");
+            setObjectPosition(e);
         } else if (e.getCode() == KeyCode.ENTER) {
             MapMain.primaryStage.hide();
             Game.main(null);

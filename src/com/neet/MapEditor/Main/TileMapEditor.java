@@ -364,7 +364,7 @@ public class TileMapEditor implements ObjectPosition {
     }
 
     /**
-     * This method places the axe and handles necessary cursor functions after the 'A' buttong is pressed.
+     * This method places the axe and handles necessary cursor functions after the 'A' button is pressed.
      *
      * @return handleType Return the type of setting result.
      */
