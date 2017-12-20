@@ -1,20 +1,15 @@
 package com.neet.MapEditor.Main;
 
-import com.neet.DiamondHunter.Main.Game;
-import com.neet.MapEditor.View.RootLayoutController;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class Main extends Application{
+public class MapMain extends Application{
 
     public static Stage primaryStage;
     public static TileMapEditor tileMapEditor;
@@ -26,8 +21,8 @@ public class Main extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Main.primaryStage = primaryStage;
-        Main.primaryStage.setTitle("Map Editor");
+        MapMain.primaryStage = primaryStage;
+        MapMain.primaryStage.setTitle("Map Editor");
         Platform.setImplicitExit(false);
         initLayout();
         showMap();
@@ -38,7 +33,7 @@ public class Main extends Application{
     public void initLayout(){
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("/com/neet/MapEditor/View/RootLayout.fxml"));
+            loader.setLocation(MapMain.class.getResource("/com/neet/MapEditor/View/RootLayout.fxml"));
             layout = loader.load();
 
             Scene scene = new Scene(layout);
@@ -59,7 +54,7 @@ public class Main extends Application{
 
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("/com/neet/MapEditor/View/Overview.fxml"));
+            loader.setLocation(MapMain.class.getResource("/com/neet/MapEditor/View/Overview.fxml"));
             tilePane = loader.load();
         } catch(IOException exception){
             exception.printStackTrace();

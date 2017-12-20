@@ -47,7 +47,7 @@ public class TileMapEditor implements ObjectPosition {
     private Image tileset;
     private int numberOfTilesAcross;
 
-    /* Main canvas that updates the entire map. */
+    /* MapMain canvas that updates the entire map. */
     public Canvas canvas;
 
     /* Shows current part of the map with relevant magnify coefficient. */
