@@ -37,18 +37,19 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             // Zoom out when the 'O' key is pressed
             MapMain.tileMapEditor.zoomOutImage();
         } else if(e.getCode() == KeyCode.UP){
-            // Move cursor up when 'W' key is pressed
+            // Move cursor up when 'arrow up' key is pressed
             MapMain.tileMapEditor.cursorUp();
+            updateCursorPos();
         } else if (e.getCode() == KeyCode.DOWN) {
-            // Move cursor down when 'S' key is pressed
+            // Move cursor down when 'arrow down' key is pressed
             MapMain.tileMapEditor.cursorDown();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.LEFT) {
-            // Move cursor to the left when 'A' key is pressed
+            // Move cursor to the left when 'arrow left' key is pressed
             MapMain.tileMapEditor.cursorLeft();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.RIGHT) {
-            // Move cursor to the right when 'D' key is pressed
+            // Move cursor to the right when 'arrow right' key is pressed
             MapMain.tileMapEditor.cursorRight();
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
