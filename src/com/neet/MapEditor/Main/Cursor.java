@@ -13,7 +13,6 @@ public class Cursor {
      * The variable decides which image to use. Gray, red or green cursor.
      */
     public int current = 2;
-
     public int cursorColumns;
     public int cursorRows;
 
