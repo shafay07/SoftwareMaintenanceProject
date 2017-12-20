@@ -242,11 +242,11 @@ public class TileMapEditor implements ObjectPosition {
     }
 
     /**
-     * This method will change cursor color when the user attemots to place and object in order to
+     * This method will change cursor color when the user attempts to place and object in order to
      * indicate the availability of the position.
      */
     private void changeCursorColor(){
-        if(cursorColor == true){
+        if(cursorColor){
             cursor.current = tileType[cursor.cursorRows][cursor.cursorColumns];
         } else {
             cursor.current = 2;

@@ -30,7 +30,6 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
         if(!Main.tileMapEditor.cursorColor){
             info.setText("A for Axe, B for Boat");
         }
-
         if(e.getCode() == KeyCode.I){
             // Zoom in the the 'I' key is pressed
             Main.tileMapEditor.zoomInImage();
@@ -54,7 +53,6 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             updateCursorPos();
         } else if (e.getCode() == KeyCode.A) {
             // Place axe when 'A' key is pressed
-            Main.tileMapEditor.turningOnCursorColor();
             info.setText("Placing Axe");
             setObjectPosition(e);
         } else if (e.getCode() == KeyCode.B) {
