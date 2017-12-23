@@ -35,7 +35,7 @@
   <top>
     <MenuBar prefHeight="25.0" prefWidth="723.0">
       <menus>
-        <Menu mnemonicParsing="false" onAction="#random" text="File">
+        <Menu mnemonicParsing="false"  text="File">
           <items>
             <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
           </items>
@@ -44,11 +44,6 @@
           <items>
             <MenuItem mnemonicParsing="false" onAction="#zoomIn" text="Zoom In" />
             <MenuItem mnemonicParsing="false" onAction="#zoomOut" text="Zoom Out" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Random">
-          <items>
-            <MenuItem mnemonicParsing="false" onAction="#random" text="GO Random!" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Help">

@@ -30,13 +30,13 @@ public class PlayState extends GameState {
 	private Player player;
 	
 	// tilemap
-	private static TileMap tileMap;
+	private TileMap tileMap;
 	
 	// diamonds
 	private ArrayList<Diamond> diamonds;
 	
 	// items
-	private static ArrayList<Item> items;
+	private  ArrayList<Item> items;
 	
 	// sparkles
 	private ArrayList<Sparkle> sparkles;
@@ -173,7 +173,7 @@ public class PlayState extends GameState {
 		
 	}
 	//adds the power
-	public static void populateItems() {
+	private void populateItems() {
 
 		Item item;
 
@@ -184,9 +184,6 @@ public class PlayState extends GameState {
 		}
 		else if (Main.tileMapEditor.getAxeRow() == -1 && Main.tileMapEditor.getAxeColumn() == -1) {
 			item.setTilePosition(26, 37);
-		}
-		else if(RootLayoutController.call){
-			System.out.println("Reached");
 		}
 		else {
 			item.setTilePosition(Main.tileMapEditor.getAxeRow(), Main.tileMapEditor.getAxeColumn());

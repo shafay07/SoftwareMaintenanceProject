@@ -13,7 +13,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 public class RootLayoutController implements EventHandler<KeyEvent>{
-    public static boolean call = false;
 
     @FXML
     private Label cursorPos;
@@ -133,12 +132,5 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
 
     private void updateCursorPos(){
         cursorPos.setText("(" + Main.tileMapEditor.cursor.cursorRows + ", " + Main.tileMapEditor.cursor.cursorColumns + ")");
-    }
-    //define the random button functionality here
-    @FXML
-    private void random() {
-        call = true;
-        PlayState.populateItems();
-        System.out.println("testing testing");
     }
 }
