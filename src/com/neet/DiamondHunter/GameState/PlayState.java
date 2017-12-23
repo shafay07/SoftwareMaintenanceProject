@@ -21,8 +21,11 @@ import com.neet.DiamondHunter.Manager.GameStateManager;
 import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
+<<<<<<< HEAD
 import com.neet.MapEditor.Main.Main;
 import sun.font.TrueTypeFont;
+=======
+>>>>>>> parent of 2afc329... Items placed in the game
 
 public class PlayState extends GameState {
 	
@@ -172,13 +175,20 @@ public class PlayState extends GameState {
 		diamonds.add(d);
 		
 	}
+<<<<<<< HEAD
 	//adds the power
 	public static void populateItems() {
 
+=======
+	
+	private void populateItems() {
+		
+>>>>>>> parent of 2afc329... Items placed in the game
 		Item item;
-
+		
 		item = new Item(tileMap);
 		item.setType(Item.AXE);
+<<<<<<< HEAD
 		if (Main.launch == false) {
 			item.setTilePosition(26, 37);
 		}
@@ -192,22 +202,16 @@ public class PlayState extends GameState {
 			item.setTilePosition(Main.tileMapEditor.getAxeRow(), Main.tileMapEditor.getAxeColumn());
 		}
 
+=======
+		item.setTilePosition(26, 37);
+>>>>>>> parent of 2afc329... Items placed in the game
 		items.add(item);
-
+		
 		item = new Item(tileMap);
 		item.setType(Item.BOAT);
-
-		if (Main.launch == false) {
-			item.setTilePosition(12, 4);
-		}
-		else if (Main.tileMapEditor.getBoatRow() == -1 && Main.tileMapEditor.getBoatColumn() == -1) {
-			item.setTilePosition(12, 4);
-		}
-		else {
-			item.setTilePosition(Main.tileMapEditor.getBoatRow(), Main.tileMapEditor.getBoatColumn());
-		}
+		item.setTilePosition(12, 4);
 		items.add(item);
-
+		
 	}
 	
 	public void update() {
