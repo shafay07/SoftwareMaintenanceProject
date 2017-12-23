@@ -20,6 +20,7 @@ import com.neet.DiamondHunter.Manager.GameStateManager;
 import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
+import com.neet.MapEditor.Main.Main;
 
 public class PlayState extends GameState {
 	
@@ -169,21 +170,39 @@ public class PlayState extends GameState {
 		diamonds.add(d);
 		
 	}
-	
+	//adds the power
 	private void populateItems() {
-		
+
 		Item item;
-		
+
 		item = new Item(tileMap);
 		item.setType(Item.AXE);
-		item.setTilePosition(26, 37);
+		if (Main.launch == false) {
+			item.setTilePosition(26, 37);
+		}
+		else if (Main.tileMapEditor.getAxeRow() == -1 && Main.tileMapEditor.getAxeColumn() == -1) {
+			item.setTilePosition(26, 37);
+		}
+		else {
+			item.setTilePosition(Main.tileMapEditor.getAxeRow(), Main.tileMapEditor.getAxeColumn());
+		}
+
 		items.add(item);
-		
+
 		item = new Item(tileMap);
 		item.setType(Item.BOAT);
-		item.setTilePosition(12, 4);
+
+		if (Main.launch == false) {
+			item.setTilePosition(12, 4);
+		}
+		else if (Main.tileMapEditor.getBoatRow() == -1 && Main.tileMapEditor.getBoatColumn() == -1) {
+			item.setTilePosition(12, 4);
+		}
+		else {
+			item.setTilePosition(Main.tileMapEditor.getBoatRow(), Main.tileMapEditor.getBoatColumn());
+		}
 		items.add(item);
-		
+
 	}
 	
 	public void update() {
