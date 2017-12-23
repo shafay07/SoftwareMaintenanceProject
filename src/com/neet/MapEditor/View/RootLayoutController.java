@@ -120,13 +120,13 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
     @FXML
     private void help(){
         // Display help information dialog
-    	Main.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n To move use the arrow Keys.","Instructions");
+    	Main.infoBox(" Press A to place the Axe.\n Press B to place the Boat.\n Navigate using the arrow keys.\n Press Enter to proceed to the game","Instructions");
     }
 
     @FXML
     private void about(){
         // Display information about the program
-    	Main.about(" The purpose of this program is to allow the User to customise the map\n for more styles of gameplay.","About");
+    	Main.about(" The purpose of this program is to allow the player to place powerups \n anywhere on the map for more styles of gameplay.","About");
     }
 
     private void updateCursorPos(){
