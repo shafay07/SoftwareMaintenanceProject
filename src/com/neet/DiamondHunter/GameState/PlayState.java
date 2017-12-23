@@ -22,8 +22,11 @@ import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.neet.MapEditor.Main.Main;
 import sun.font.TrueTypeFont;
+=======
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
 >>>>>>> parent of 2afc329... Items placed in the game
 
@@ -176,9 +179,15 @@ public class PlayState extends GameState {
 		
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	//adds the power
 	public static void populateItems() {
 
+=======
+	
+	private void populateItems() {
+		
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
 	
 	private void populateItems() {
@@ -188,6 +197,7 @@ public class PlayState extends GameState {
 		
 		item = new Item(tileMap);
 		item.setType(Item.AXE);
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (Main.launch == false) {
 			item.setTilePosition(26, 37);
@@ -202,6 +212,9 @@ public class PlayState extends GameState {
 			item.setTilePosition(Main.tileMapEditor.getAxeRow(), Main.tileMapEditor.getAxeColumn());
 		}
 
+=======
+		item.setTilePosition(26, 37);
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
 		item.setTilePosition(26, 37);
 >>>>>>> parent of 2afc329... Items placed in the game

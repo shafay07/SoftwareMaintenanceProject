@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="425a1063-c4d2-45b5-87a8-f61d577f8364" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Cursor.class" afterPath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Cursor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Main.class" afterPath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayoutController.class" afterPath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayoutController.class" />
@@ -37,10 +38,44 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayoutController.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Animation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Diamond.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Entity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Item.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Entity/Sparkle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/GameOverState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/GameState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/IntroState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/MenuState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/PauseState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/GameState/PlayState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/HUD/Hud.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Main/Game.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Main/GamePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Manager/Content.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Manager/Data.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Manager/GameStateManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Manager/JukeBox.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/Manager/Keys.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/TileMap/Tile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/DiamondHunter/TileMap/TileMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Cursor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/ObjectPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/Main/TileMapEditor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayoutController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> parent of 2afc329... Items placed in the game
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diamond Hunter.iml" afterPath="$PROJECT_DIR$/Diamond Hunter.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayout.fxml" afterPath="$PROJECT_DIR$/bin/com/neet/MapEditor/View/RootLayout.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml" afterPath="$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java" afterPath="$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java" />
+<<<<<<< HEAD
+>>>>>>> parent of 2afc329... Items placed in the game
+=======
 >>>>>>> parent of 2afc329... Items placed in the game
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -57,11 +92,17 @@
         <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/TileMapEditor.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="-3148">
               <caret line="246" column="7" lean-forward="true" selection-start-line="246" selection-start-column="7" selection-end-line="246" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="214">
+              <caret line="441" column="26" lean-forward="false" selection-start-line="441" selection-start-column="26" selection-end-line="441" selection-end-column="26" />
+              <folding />
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
             <state relative-caret-position="214">
               <caret line="441" column="26" lean-forward="false" selection-start-line="441" selection-start-column="26" selection-end-line="441" selection-end-column="26" />
@@ -75,7 +116,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/Cursor.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="425">
+=======
+            <state relative-caret-position="675">
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
             <state relative-caret-position="675">
 >>>>>>> parent of 2afc329... Items placed in the game
@@ -89,12 +134,15 @@
         <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="232">
               <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
 =======
+=======
+>>>>>>> parent of 2afc329... Items placed in the game
             <state relative-caret-position="123">
               <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
@@ -103,6 +151,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="RootLayoutController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java">
@@ -122,13 +171,27 @@
                 <element signature="e#4704#4705#0" expanded="true" />
                 <element signature="e#4757#4758#0" expanded="true" />
 >>>>>>> parent of 2afc329... Items placed in the game
+=======
+      <file leaf-file-name="RootLayoutController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="137" column="46" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4704#4705#0" expanded="true" />
+                <element signature="e#4757#4758#0" expanded="true" />
+>>>>>>> parent of 2afc329... Items placed in the game
               </folding>
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2afc329... Items placed in the game
       <file leaf-file-name="RootLayout.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml">
           <provider selected="true" editor-type-id="text-editor">
@@ -181,7 +244,10 @@
         <option value="$PROJECT_DIR$/src/com/neet/MapEditor/Main/TileMapEditor.java" />
         <option value="$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/com/neet/MapEditor/Main/Main.java" />
+=======
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
 >>>>>>> parent of 2afc329... Items placed in the game
       </list>
@@ -541,8 +607,13 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
@@ -589,8 +660,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 2afc329... Items placed in the game
@@ -615,9 +690,13 @@
         <state relative-caret-position="34">
           <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
           <folding />
 >>>>>>> parent of 2afc329... Items placed in the game
@@ -708,6 +787,11 @@
           <folding>
             <element signature="imports" expanded="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#4757#4758#0" expanded="true" />
+>>>>>>> parent of 2afc329... Items placed in the game
 =======
             <element signature="e#4704#4705#0" expanded="true" />
             <element signature="e#4757#4758#0" expanded="true" />
@@ -891,6 +975,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -926,12 +1011,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/Cursor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/TileMapEditor.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="441" column="26" lean-forward="false" selection-start-line="441" selection-start-column="26" selection-end-line="441" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> parent of 2afc329... Items placed in the game
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-3148">
           <caret line="246" column="7" lean-forward="true" selection-start-line="246" selection-start-column="7" selection-end-line="246" selection-end-column="7" />
 =======
@@ -961,6 +1069,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayout.fxml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/neet/MapEditor/View/RootLayoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="137" column="46" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="46" />
+>>>>>>> parent of 2afc329... Items placed in the game
+=======
         <state relative-caret-position="54">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
