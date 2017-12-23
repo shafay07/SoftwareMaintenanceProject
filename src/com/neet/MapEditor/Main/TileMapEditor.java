@@ -363,7 +363,7 @@ public class TileMapEditor implements ObjectPosition {
      */
     public int handleSetAxeRequest() {
         int handleType;
-        cursorColor = false;
+        cursorColor = true;
         changeCursorColor();
 
         replaceTileInCanvasToOriginal(cursor.cursorColumns, cursor.cursorRows);
@@ -379,7 +379,7 @@ public class TileMapEditor implements ObjectPosition {
 
                 tileType[axeRow][axeColumn] = 0;
                 tileType[cursor.cursorRows][cursor.cursorRows] = 1;
-
+                cursorColor = false;
                 handleType = 2;
             }
             else {
@@ -388,7 +388,7 @@ public class TileMapEditor implements ObjectPosition {
 
             axePlaced = true;
             tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
+            cursorColor = false;
             axeRow = cursor.cursorRows;
             axeColumn = cursor.cursorColumns;
         }
@@ -409,7 +409,7 @@ public class TileMapEditor implements ObjectPosition {
      */
     public int handleSetBoatRequest() {
         int handleType;
-        cursorColor = false;
+        cursorColor = true;
         changeCursorColor();
 
         replaceTileInCanvasToOriginal(cursor.cursorColumns, cursor.cursorRows);
@@ -425,7 +425,7 @@ public class TileMapEditor implements ObjectPosition {
 
                 tileType[boatRow][boatColumn] = 0;
                 tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
+                cursorColor = false;
                 handleType = 2;
             }
             else {
@@ -434,7 +434,7 @@ public class TileMapEditor implements ObjectPosition {
 
             boatPlaced = true;
             tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
+            cursorColor = false;
             boatRow = cursor.cursorRows;
             boatColumn = cursor.cursorColumns;
 
