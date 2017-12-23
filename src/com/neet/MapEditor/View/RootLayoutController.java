@@ -2,6 +2,7 @@ package com.neet.MapEditor.View;
 
 import com.neet.DiamondHunter.Main.Game;
 import com.neet.MapEditor.Main.Main;
+import com.neet.DiamondHunter.GameState.PlayState;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -12,6 +13,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 public class RootLayoutController implements EventHandler<KeyEvent>{
+    public static boolean call = false;
 
     @FXML
     private Label cursorPos;
@@ -135,6 +137,8 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
     //define the random button functionality here
     @FXML
     private void random() {
+        call = true;
+        PlayState.populateItems();
         System.out.println("testing testing");
     }
 }

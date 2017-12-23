@@ -9,6 +9,7 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 
+import com.neet.MapEditor.View.RootLayoutController;
 import com.neet.DiamondHunter.Entity.Diamond;
 import com.neet.DiamondHunter.Entity.Item;
 import com.neet.DiamondHunter.Entity.Player;
@@ -21,6 +22,7 @@ import com.neet.DiamondHunter.Manager.JukeBox;
 import com.neet.DiamondHunter.Manager.Keys;
 import com.neet.DiamondHunter.TileMap.TileMap;
 import com.neet.MapEditor.Main.Main;
+import sun.font.TrueTypeFont;
 
 public class PlayState extends GameState {
 	
@@ -28,13 +30,13 @@ public class PlayState extends GameState {
 	private Player player;
 	
 	// tilemap
-	private TileMap tileMap;
+	private static TileMap tileMap;
 	
 	// diamonds
 	private ArrayList<Diamond> diamonds;
 	
 	// items
-	private ArrayList<Item> items;
+	private static ArrayList<Item> items;
 	
 	// sparkles
 	private ArrayList<Sparkle> sparkles;
@@ -171,7 +173,7 @@ public class PlayState extends GameState {
 		
 	}
 	//adds the power
-	private void populateItems() {
+	public static void populateItems() {
 
 		Item item;
 
@@ -182,6 +184,9 @@ public class PlayState extends GameState {
 		}
 		else if (Main.tileMapEditor.getAxeRow() == -1 && Main.tileMapEditor.getAxeColumn() == -1) {
 			item.setTilePosition(26, 37);
+		}
+		else if(RootLayoutController.call){
+			System.out.println("Reached");
 		}
 		else {
 			item.setTilePosition(Main.tileMapEditor.getAxeRow(), Main.tileMapEditor.getAxeColumn());
