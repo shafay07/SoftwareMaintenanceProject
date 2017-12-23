@@ -59,7 +59,7 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
             // Place boat when 'B' key is pressed
             Main.tileMapEditor.turningOnCursorColor();
             info.setText("Placing Boat");
-            setObjectPosition(e);
+            setObjectPosition(e);  
         } else if (e.getCode() == KeyCode.ENTER) {
             Main.primaryStage.hide();
             Game.main(null);
@@ -119,7 +119,7 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
     @FXML
     private void help(){
         // Display help information dialog
-    	Main.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n To move use the arrow Keys.","Instructions");
+    	Main.infoBox(" Press A to place Axe.\n Press B to Place Boat.\n Press R to randomise boat and axe location.\n To move use the arrow Keys.","Instructions");
     }
 
     @FXML

@@ -137,7 +137,7 @@ public class TileMapEditor implements ObjectPosition {
                     canvas.getGraphicsContext2D().drawImage(
                             tileset, c*tileSize, tileSize, tileSize, tileSize,column*tileSize, row*tileSize, tileSize, tileSize);
                     currentCanvas.getGraphicsContext2D().drawImage(
-                            tileset, c * tileSize, tileSize, tileSize, tileSize,column * tileSize, row * tileSize, tileSize, tileSize);
+                            tileset, c*tileSize, tileSize, tileSize, tileSize,column * tileSize, row * tileSize, tileSize, tileSize);
                     tileType[row][column] = 1;
                 }
             }
@@ -252,7 +252,6 @@ public class TileMapEditor implements ObjectPosition {
             cursor.current = 2;
         }
     }
-
     public void turningOnCursorColor(){
         cursorColor = true;
         changeCursorColor();
@@ -262,7 +261,6 @@ public class TileMapEditor implements ObjectPosition {
         mapImage = canvas.snapshot(null,null);
         updateCurrentCanvas();
     }
-
     /**
      * Move cursor up.
      */
@@ -363,7 +361,7 @@ public class TileMapEditor implements ObjectPosition {
      */
     public int handleSetAxeRequest() {
         int handleType;
-        cursorColor = false;
+        cursorColor = true;
         changeCursorColor();
 
         replaceTileInCanvasToOriginal(cursor.cursorColumns, cursor.cursorRows);
@@ -378,7 +376,7 @@ public class TileMapEditor implements ObjectPosition {
                 replaceTileInCanvasToOriginal(axeColumn, axeRow);
 
                 tileType[axeRow][axeColumn] = 0;
-                tileType[cursor.cursorRows][cursor.cursorRows] = 1;
+                tileType[cursor.cursorRows][cursor.cursorRows] = 0;
 
                 handleType = 2;
             }
@@ -387,18 +385,16 @@ public class TileMapEditor implements ObjectPosition {
             }
 
             axePlaced = true;
-            tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
+            tileType[cursor.cursorRows][cursor.cursorColumns] = 0;
+            cursorColor = false;
             axeRow = cursor.cursorRows;
             axeColumn = cursor.cursorColumns;
         }
 
         updateItemsDraw();
         drawCursorOnCanvas();
-
         mapImage = canvas.snapshot(null, null);
         updateCurrentCanvas();
-
         return handleType;
     }
 
@@ -409,23 +405,22 @@ public class TileMapEditor implements ObjectPosition {
      */
     public int handleSetBoatRequest() {
         int handleType;
-        cursorColor = false;
+        cursorColor = true;
         changeCursorColor();
-
         replaceTileInCanvasToOriginal(cursor.cursorColumns, cursor.cursorRows);
-
         // return type: Position invalid
-        if (tileType[cursor.cursorRows][cursor.cursorColumns] == 1) {
+        if (tileType[cursor.cursorRows][cursor.cursorColumns] == 0) {
             handleType = 1;
+            cursor.current = 1;
         }
         // return type: Boat put successful
         else {
             if (boatPlaced) {
                 replaceTileInCanvasToOriginal(boatColumn, boatRow);
-
-                tileType[boatRow][boatColumn] = 0;
+                cursor.current = 0;
+                tileType[boatRow][boatColumn] = 1;
                 tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
+                cursorColor = false;
                 handleType = 2;
             }
             else {
@@ -434,7 +429,6 @@ public class TileMapEditor implements ObjectPosition {
 
             boatPlaced = true;
             tileType[cursor.cursorRows][cursor.cursorColumns] = 1;
-
             boatRow = cursor.cursorRows;
             boatColumn = cursor.cursorColumns;
 
@@ -443,6 +437,7 @@ public class TileMapEditor implements ObjectPosition {
         drawCursorOnCanvas();
         mapImage = canvas.snapshot(null, null);
         updateCurrentCanvas();
+        
         return handleType;
     }
 }
