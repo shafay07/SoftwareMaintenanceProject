@@ -3,6 +3,7 @@ package com.neet.MapEditor.View;
 import com.neet.DiamondHunter.Main.Game;
 import com.neet.MapEditor.Main.Main;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -130,5 +131,10 @@ public class RootLayoutController implements EventHandler<KeyEvent>{
 
     private void updateCursorPos(){
         cursorPos.setText("(" + Main.tileMapEditor.cursor.cursorRows + ", " + Main.tileMapEditor.cursor.cursorColumns + ")");
+    }
+    //define the random button functionality here
+    @FXML
+    private void random() {
+        System.out.println("testing testing");
     }
 }

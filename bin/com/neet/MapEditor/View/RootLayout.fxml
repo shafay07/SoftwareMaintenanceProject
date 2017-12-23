@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane onKeyPressed="#handle" onKeyReleased="#setObjectPosition" prefHeight="700.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neet.MapEditor.View.RootLayoutController">
-   <top>
-      <MenuBar layoutX="-5.0" layoutY="2.0" prefHeight="25.0" prefWidth="723.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Map">
-            <items>
-                <MenuItem mnemonicParsing="false" onAction="#zoomIn" text="Zoom In" />
-                <MenuItem mnemonicParsing="false" onAction="#zoomOut" text="Zoom Out" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-                <MenuItem mnemonicParsing="false" onAction="#help" text="Instruction" />
-                <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </top>
-    <bottom>
-      <GridPane layoutY="644.0" prefHeight="37.0" prefWidth="723.0" style="-fx-background-color: #2ECC71;">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label fx:id="cursorPos" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="177.0" text="(0, 0)" textAlignment="CENTER" />
-            <Label fx:id="info" alignment="CENTER" prefHeight="41.0" prefWidth="181.0" text="A for Axe, B for Boat" textAlignment="CENTER" GridPane.columnIndex="1" />
-            <Label fx:id="axePos" alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="183.0" text="Axe Not Placed" GridPane.columnIndex="2" />
-            <Label fx:id="boatPos" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="191.0" text="Boat Not Placed" GridPane.columnIndex="3" />
-         </children>
-      </GridPane>
-    </bottom>
+<BorderPane onKeyPressed="#handle" onKeyReleased="#setObjectPosition" prefHeight="700.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.neet.MapEditor.View.RootLayoutController">
+  <bottom>
+    <GridPane prefHeight="37.0" prefWidth="723.0" style="-fx-background-color: #2ECC71;">
+      <children>
+        <Label fx:id="cursorPos" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="177.0" text="(0, 0)" textAlignment="CENTER" />
+        <Label fx:id="info" alignment="CENTER" prefHeight="41.0" prefWidth="181.0" text="A for Axe, B for Boat" textAlignment="CENTER" GridPane.columnIndex="1" />
+        <Label fx:id="axePos" alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="183.0" text="Axe Not Placed" GridPane.columnIndex="2" />
+        <Label fx:id="boatPos" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="191.0" text="Boat Not Placed" GridPane.columnIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </bottom>
+  <top>
+    <MenuBar prefHeight="25.0" prefWidth="723.0">
+      <menus>
+        <Menu mnemonicParsing="false" onAction="#random" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Map">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#zoomIn" text="Zoom In" />
+            <MenuItem mnemonicParsing="false" onAction="#zoomOut" text="Zoom Out" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Random">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#random" text="GO Random!" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#help" text="Instruction" />
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
 </BorderPane>
